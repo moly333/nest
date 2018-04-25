@@ -7,7 +7,6 @@ import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
 import Notifications from 'vue-notification'
 import store from './store/index'
-import '../node_modules/@mdi/font/css/materialdesignicons.min.css'
 
 Vue.config.productionTip = false
 Vue.use(Buefy)

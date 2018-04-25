@@ -19,12 +19,12 @@
         <div class="navbar-item">
                 <b-dropdown class="is-active">
                     <a class="navbar-item" slot="trigger">
-                    <b-icon icon="menu-down"></b-icon>
+                    <MenuDown />
                     <span>Project</span>
                 </a>
                     <b-dropdown-item v-for="project in projects" :key="project.id" @click="selectProject(project)">
                         <div class="media">
-                            <b-icon v-show="selectedProject===project" class="media-left" icon="check"></b-icon>
+                            <Check v-show="selectedProject===project" class="media-left"/>
                             <div class="media-content">
                             {{ project }}
                             </div>
@@ -40,6 +40,8 @@
 </template>
 <script>
 import { mapActions, mapGetters } from 'vuex'
+import MenuDown from 'vue-material-design-icons/menu-down.vue'
+import Check from 'vue-material-design-icons/check.vue'
 export default {
   computed: mapGetters({
     projects: 'projects',
@@ -47,6 +49,10 @@ export default {
   }),
   methods: {
     ...mapActions(['selectProject'])
+  },
+  components: {
+    MenuDown,
+    Check
   }
 }
 </script>
