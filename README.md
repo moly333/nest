@@ -1,5 +1,5 @@
 # scrapyfrontend
-[![Build Status](https://travis-ci.org/moly333/nest.svg?branch=master)](https://travis-ci.org/moly333/nest)
+[![Build Status](https://travis-ci.org/morimolymoly/nest.svg?branch=master)](https://travis-ci.org/morimolymoly/nest)
 > A Vue.js project
 
 ## Build Setup
